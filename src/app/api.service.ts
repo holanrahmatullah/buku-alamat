@@ -22,13 +22,13 @@ export class ApiService {
     return this.http.post(this.apiUrl+'data',data);
     
   }
-  ubah(id,data){
+  ubah(data){
     
-    return this.http.put(this.apiUrl+'data',id + data);
+    return this.http.put(this.apiUrl+'data/'+ data.id, data);
   }
   hapus(id){
     
-    return this.http.delete(this.apiUrl+'data',id);
+    return this.http.delete(this.apiUrl+'data/'+id);
   }
 
 }

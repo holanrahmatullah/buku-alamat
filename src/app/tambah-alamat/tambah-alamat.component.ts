@@ -28,7 +28,7 @@ export class TambahAlamatComponent implements OnInit {
         this.dialogRef.close(true);
       });
     }else{
-      this.api.ubah(data,data.id).subscribe(res=>{
+      this.api.ubah(data).subscribe(res=>{
         this.dialogRef.close(true);
       })
     }
