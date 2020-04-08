@@ -1,0 +1,6 @@
+.spacer{
+    flex-grow: 1;
+}
+.container{
+    padding: 50px 100px 50px 100px;
+}

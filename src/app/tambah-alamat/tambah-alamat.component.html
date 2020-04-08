@@ -1,0 +1,42 @@
+<h3 mat-dialog-title>Tambah Alamat Baru</h3>
+<div mat-dialog-content>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Nama</mat-label>
+        <input matInput [(ngModel)]="data.nama" >
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Alamat</mat-label>
+        <input matInput [(ngModel)]="data.alamat">
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Kota</mat-label>
+        <input matInput [(ngModel)]="data.kota">
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Propinsi</mat-label>
+        <input matInput [(ngModel)]="data.propinsi">
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Kode Pos</mat-label>
+        <input matInput [(ngModel)]="data.kodepos">
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Nomer HP</mat-label>
+        <input matInput [(ngModel)]="data.hp">
+    </mat-form-field>
+
+    <mat-form-field style="width: 100%;">
+        <mat-label>Email</mat-label>
+        <input matInput  [(ngModel)]="data.email">
+    </mat-form-field>
+</div>
+<mat-dialog-actions>
+    <span class="spacer"></span>
+    <button mat-button mat-dialog-close>Batal</button>    
+    <button mat-raised-button color="primary" (click)="simpan(data)">Simpan</button>
+  </mat-dialog-actions>
