@@ -59,6 +59,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TambahAlamatComponent,
     DetailAlamatComponent,
     DialogKonfirmasiComponent
-  ],
+  ]
 })
 export class AppModule { }
